@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind - Our Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body { font-family: 'Inter', 'inter; background-color: #FFFEE7; color: #1e1e1e; }
+        .brand-green { background-color: #00704A; }
+        .text-brand-green { color: #00704A; }
+        .border-brand-green { border-color: #00704A; }
+    </style>
+</head>
+<body>
+    <header class="brand-green shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-white hover:text-gray-200 transition duration-300">
+                <img src="media/logo.png" alt="logo" width="68" height="37">
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-200 hover:text-white font-medium transition duration-300">Home</a>
+                <a href="menu.html" class="text-white hover:text-gray-200 font-medium transition duration-300">Menu</a>
+                <a href="gallery.html" class="text-gray-200 hover:text-white font-medium transition duration-300">Gallery</a>
+                <a href="about.html" class="text-gray-200 hover:text-white font-medium transition duration-300">About</a>
+                <a href="contact.html" class="text-gray-200 hover:text-white font-medium transition duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition duration-300">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden">
+            <nav class="px-6 pb-4 flex flex-col space-y-2 text-white brand-green">
+                <a href="index.html" class="py-2 hover:text-gray-200 transition duration-300">Home</a>
+                <a href="menu.html" class="py-2 hover:text-gray-200 transition duration-300">Menu</a>
+                <a href="gallery.html" class="py-2 hover:text-gray-200 transition duration-300">Gallery</a>
+                <a href="about.html" class="py-2 hover:text-gray-200 transition duration-300">About</a>
+                <a href="contact.html" class="py-2 hover:text-gray-200 transition duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container mx-auto px-6 py-20 fade-in-section">
+            <h2 class="text-4xl font-semibold text-center mb-16">Explore Our Full Menu</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="bg-white rounded-xl shadow-xl transition duration-300 hover:shadow-2xl overflow-hidden">
+                    <img src="media/cappuccino.png" alt="Artisan Coffee" class="w-full h-40 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold mb-6 text-brand-green border-b pb-3 border-gray-200">Artisan Coffee</h3>
+                        <div class="space-y-6">
+                            <div class="flex justify-between items-end border-b border-dotted border-gray-400 pb-1 menu-item-hover">
+                                <p class="text-lg font-medium menu-item-text">Cappuccino</p>
+                                <span class="text-xl font-bold text-gray-800 menu-item-price">LKR 600</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-dotted border-gray-400 pb-1 menu-item-hover">
+                                <p class="text-lg font-medium menu-item-text">Hot Chocolate</p>
+                                <span class="text-xl font-bold text-gray-800 menu-item-price">LKR 550</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-dotted border-gray-400 pb-1 menu-item-hover">
+                                <p class="text-lg font-medium menu-item-text">Iced Caramel Macchiato</p>
+                                <span class="text-xl font-bold text-gray-800 menu-item-price">LKR 750</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-dotted border-gray-400 pb-1 menu-item-hover">
+                                <p class="text-lg font-medium menu-item-text">Matcha Latte</p>
+                                <span class="text-xl font-bold text-gray-800 menu-item-price">LKR 700</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-xl transition duration-300 hover:shadow-2xl overflow-hidden">
+                    <img src="media/avacado.png" alt="All-Day Breakfast" class="w-full h-40 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold mb-6 text-brand-green border-b pb-3 border-gray-200">All-Day Breakfast</h3>
+                        <div class="space-y-6">
+                            <div class="flex justify-between items-end border-b border-dotted border-gray-400 pb-1 menu-item-hover">
+                                <p class="text-lg font-medium menu-item-text">Avocado Toast Supreme</p>
+                                <span class="text-xl font-bold text-gray-800 menu-item-price">LKR 2,200</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-dotted border-gray-400 pb-1 menu-item-hover">
+                                <p class="text-lg font-medium menu-item-text">Berry Chia Bowl</p>
+                                <span class="text-xl font-bold text-gray-800 menu-item-price">LKR 1,600</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-dotted border-gray-400 pb-1 menu-item-hover">
+                                <p class="text-lg font-medium menu-item-text">Smoked Salmon Bagel</p>
+                                <span class="text-xl font-bold text-gray-800 menu-item-price">LKR 2,800</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-dotted border-gray-400 pb-1 menu-item-hover">
+                                <p class="text-lg font-medium menu-item-text">Farmers Omelette</p>
+                                <span class="text-xl font-bold text-gray-800 menu-item-price">LKR 1,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-xl transition duration-300 hover:shadow-2xl overflow-hidden">
+                    <img src="media/salad.png" alt="Lunch & Specialties" class="w-full h-40 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold mb-6 text-brand-green border-b pb-3 border-gray-200">Lunch & Specialties</h3>
+                        <div class="space-y-6">
+                            <div class="flex justify-between items-end border-b border-dotted border-gray-400 pb-1 menu-item-hover">
+                                <p class="text-lg font-medium menu-item-text">Harvest Chicken Sandwich</p>
+                                <span class="text-xl font-bold text-gray-800 menu-item-price">LKR 2,400</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-dotted border-gray-400 pb-1 menu-item-hover">
+                                <p class="text-lg font-medium menu-item-text">Quinoa Power Bowl</p>
+                                <span class="text-xl font-bold text-gray-800 menu-item-price">LKR 2,700</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-dotted border-gray-400 pb-1 menu-item-hover">
+                                <p class="text-lg font-medium menu-item-text">Spicy Peanut Noodle Salad</p>
+                                <span class="text-xl font-bold text-gray-800 menu-item-price">LKR 2,200</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-dotted border-gray-400 pb-1 menu-item-hover">
+                                <p class="text-lg font-medium menu-item-text">Soup of the Day</p>
+                                <span class="text-xl font-bold text-gray-800 menu-item-price">LKR 1,200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-16">
+                <p class="text-lg text-gray-600">All ingredients are sourced locally and prepared fresh daily.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="brand-green text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-xl font-semibold mb-4">The Daily Grind</p>
+            <div class="flex justify-center space-x-6 mb-8">© 2025 The Daily Grind. All rights reserved. | Crafted with Love in Sri Lanka</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

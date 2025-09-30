@@ -1,0 +1,58 @@
+/* Custom CSS for The Daily Grind */
+
+/* Global CSS for Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+/* Custom font import for aesthetics */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFEE7; /* Light off-white background */
+    color: #1e1e1e;
+}
+
+/* Custom green accent color for the brand (STARBUCKS GREEN #00704A) */
+.brand-green {
+    background-color: #00704A; /* Deep Forest Green */
+}
+.text-brand-green {
+    color: #00704A;
+}
+.border-brand-green {
+    border-color: #00704A;
+}
+
+/* Fade-in styles for content sections */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover effects for menu items */
+.menu-item-hover:hover .menu-item-text {
+    transform: translateX(5px);
+    color: #00704A;
+}
+
+.menu-item-hover:hover .menu-item-price {
+    color: #1e1e1e;
+}
+
+.menu-item-text,
+.menu-item-price {
+    transition: all 0.3s ease;
+}
+
+/* Hover effects for gallery images */
+.gallery-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.2);
+}
